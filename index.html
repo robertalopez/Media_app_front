@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<title>basic.html</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<script defer type="text/javascript" src="src/script.js"></script>
+<meta charset = "UTF-8" />
+</head>
+<body>
+    <div id="site-wrap">
+        <div class="header">
+            <h1>Flatiron Cinemas</h1>
+        </div>
+        <div class="cats">
+            CATS HERE
+        </div>
+        <div class="main">
+            MAIN 
+        </div>
+        <div class="reviewz">
+            REviews
+        </div>
+        <div class="new-form">
+            Share Something to Watch!
+            <br>
+            <br>
+            <form class="entry-form">
+                <input type="hidden" value="Category id" id="cat-id"/> 
+                <label for="title"> Entry Title:</label>
+                <input type="text" id="title" name="title" value="title"/><br>
+                <br>
+                <label for="image"> Image URL:</label>
+                <input type="text" id="image" name="image" value="image"/><br>
+                <br>
+                <label for="desc"> Description:</label>
+                <textarea id="desc" name="desc" rows="7" cols="45"></textarea>
+                <!-- <input type="text" id="desc" name="desc" value="desc"/><br> -->
+                <br>
+                <input type="submit" value="New Entry"/>
+            </form>
+        </div>
+        <div class="review-form">
+            Leave a Review!
+            <br>
+            <br>
+            <form class="review-form">
+                <input type="hidden" value="Entry id" id="entry-id"/>
+                <label for="name"> Enter your Name: </label>
+                <input type="text" id="name" name="name"/><br>
+                <br>
+                <label for="description"> What did you think? </label>
+                <textarea id="description" name="desc" rows="8" cols="20"></textarea>
+                <!-- <input type="text" id="description" name="description"/><br> -->
+                <br>
+                <input type="submit" value="Post Review"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
